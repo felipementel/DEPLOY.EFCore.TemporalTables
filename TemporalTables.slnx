@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DEPLOY.TemporalTables.API/DEPLOY.TemporalTables.API.csproj" />
+  </Folder>
+</Solution>

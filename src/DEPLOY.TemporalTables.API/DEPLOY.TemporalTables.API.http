@@ -1,0 +1,6 @@
+@DEPLOY.TemporalTables.API_HostAddress = http://localhost:5023
+
+GET {{DEPLOY.TemporalTables.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

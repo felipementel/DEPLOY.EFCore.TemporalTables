@@ -24,7 +24,6 @@ namespace DEPLOY.TemporalTables.API.Endpoints.v2
                 //.RequireAuthorization()
                 .WithApiVersionSet(apiVersionSetPessoa);
 
-
             people
                   .MapPost("/create/{qtd:int}",
                   async (DeployDbContext dbContext,
@@ -202,7 +201,7 @@ namespace DEPLOY.TemporalTables.API.Endpoints.v2
                 {
                     var personActual = await dbContext.Person_Versioned
                     .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
-                    
+
                     if (personActual == null)
                     {
                         return Results.NotFound();
@@ -393,7 +392,7 @@ namespace DEPLOY.TemporalTables.API.Endpoints.v2
 
 
 
-        
+
 
         //            try
         //            {
